@@ -1,33 +1,3 @@
-<!-- # HNG12 Public API
-
-## Description
-
-This is a simple public API for HNG that returns:
-
-- My Slack email address
-- Current timestamp (ISO 8601 format)
-- GitHub repository URL
-
-## API Endpoint
-
-**GET /**
-Example Response:
-
-```json
-{
-  "slack_email": "your-email@example.com",
-  "timestamp": "2025-01-29T12:00:00Z",
-  "github_url": "https://github.com/yourusername/hng12-public-api"
-}
-```
-
-## Set up Instructions
-
-- Clone repo
-- run the command npm install to install all dependencies
-- run `npm run serve` to run the local express server
-- navigate to GET localhost:3000/ -->
-
 # HNG12 Public API
 
 ## Overview
@@ -67,8 +37,8 @@ This is a simple public API for **HNG12**, built with **TypeScript and Express**
 ### **1️⃣ Clone the Repository**
 
 ```sh
-git clone https://github.com/OnmejeTg/HNG
-cd HNG/stage-01
+git clone https://github.com/OnmejeTg/HNG12
+cd HNG12
 ```
 
 ### **2️⃣ Install Dependencies**
@@ -80,7 +50,7 @@ npm install
 ### **3️⃣ Run the Server Locally**
 
 ```sh
-npm run dev
+npm run serve
 ```
 
 By default, the server runs on **`http://localhost:3000/`**.
@@ -107,18 +77,6 @@ You can deploy this API to **Render**, **Vercel**, or any cloud provider.
 4. Select your repository and set:
    - **Build Command:** `npm install && npm run build`
    - **Start Command:** `node dist/index.js`
-   - Add `SLACK_EMAIL` as an **environment variable**.
-
-### **Deploy on Vercel**
-
-1. Install **Vercel CLI**:
-   ```sh
-   npm install -g vercel
-   ```
-2. Deploy:
-   ```sh
-   vercel
-   ```
 
 ---
 
