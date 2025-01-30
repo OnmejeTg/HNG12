@@ -7,7 +7,7 @@ const express_1 = __importDefault(require("express"));
 const cors_1 = __importDefault(require("cors"));
 const app = (0, express_1.default)();
 app.use((0, cors_1.default)());
-app.get("/", (req, res) => {
+app.get("/hng", (req, res) => {
     const response = {
         email: "tonmeje@gmail.com",
         current_datetime: new Date().toISOString(),

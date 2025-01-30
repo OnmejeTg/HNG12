@@ -11,7 +11,7 @@ interface ApiResponse {
   github_repo_url: string;
 }
 
-app.get("/", (req: Request, res: Response) => {
+app.get("/hng", (req: Request, res: Response) => {
   const response: ApiResponse = {
     email: "tonmeje@gmail.com",
     current_datetime: new Date().toISOString(),
